@@ -1,57 +1,56 @@
-@media(max-width: 750px) {
+@media (max-width: 750px) {
+  body {
+    font-size: 12px;
+  }
 
-    body {
-        font-size: 12px;
-    }
+  .pokedex {
+    flex-direction: column;
+    padding: 30px 0;
+  }
 
-    .pokedex {
-        flex-direction: column;
-        padding: 30px 0;
-    }
-    
-    .pokemon-card {
-        max-width: 300px;
-    }
+  .pokemon-card {
+    max-width: 300px;
+  }
 
-    .pokemon-card .card-imagem {
-        width: 200px;
-        height: 200px;
-    }
+  .pokemon-card .card-imagem {
+    width: 200px;
+    height: 200px;
+  }
 
-    .pokemon-card .card-informacoes {
-        padding: 60px 30px 30px;
-        margin-top: -50px;
-    }
+  .pokemon-card .card-informacoes {
+    padding: 60px 30px 30px;
+    margin-top: -50px;
+  }
 
-    .pokemon-card .card-informacoes .informacoes {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 0;
-    }
+  .pokemon-card .card-informacoes .informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0;
+  }
 
-    .pokemon-card .card-informacoes h3 {
-        font-size: 16px;
-    }
+  .pokemon-card .card-informacoes h3 {
+    font-size: 16px;
+  }
 
-    .listagem {
-        max-width: 300px;
-    }
+  .listagem {
+    max-width: 300px;
+  }
 
-    .listagem ul {
-        display: flex;
-        gap: 8px;
-        flex-wrap: wrap;
-    }
+  .listagem ul {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 
-    .listagem .pokemon {
-        width: 140px;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
-        margin-bottom: 0;
-        border-radius: 8px;
-    }
-    
-    .listagem .pokemon span {    
-        padding-right: 5px;
-    }
+  .listagem .pokemon {
+    width: 140px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-bottom: 0;
+    border-radius: 8px;
+  }
+
+  .listagem .pokemon span {
+    padding-right: 5px;
+  }
 }
