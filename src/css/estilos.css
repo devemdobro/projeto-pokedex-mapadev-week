@@ -11,53 +11,60 @@ main {
 }
 
 .pokedex {
+    /*
     max-width: 900px;
     margin: 0 auto;
+    */
     display: flex;
+    /*
     justify-content: space-between;
+    */
     gap: 30px;
 }
 
 .pokemon-cards { 
     max-width: 450px;  /* precisa pra travar o tamanho do card independente do tamanho da img do pokemon*/
-    min-height: 640px;
+    
+     /*
+     min-height: 640px;
     margin: 0 auto;
+    */
 }
 
 .pokemon-card {
     display: none;
 
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    cursor: pointer;
+    
     border-radius: 10px;
 
 }
 
-.pokemon-card .container-topo {
-    padding: 30px 40px;
+.pokemon-card .card-topo {
+    padding: 30px 40px 0;
 }
 
-.fogo {
+.tipo-fogo {
     background-color: #ed8a8b;
 }
 
-.agua {
+.tipo-agua {
     background-color: #76BEFE;
 }
 
-.grama {
+.tipo-grama {
     background-color: #49D0B0;
 }
 
-.trevas {
+.tipo-trevas {
     background-color: #ba68c8;   
 }
 
-.raio {
+.tipo-raio {
     background-color: #fcc719; 
 }
 
-.dragao {
+.tipo-dragao {
     background-color: #c29791; 
 }
 
@@ -82,7 +89,7 @@ main {
     align-items: center;
 }
 
-.pokemon-card .container-imagem {
+.pokemon-card .card-imagem {
     text-align: center;
     width: 350px;
     height: 350px;
@@ -93,31 +100,31 @@ main {
     height: 100%;
 }
 
-.pokemon-card .container-informacoes {
+.pokemon-card .card-informacoes {
     background-color: #FFFFFF;
     padding: 50px;
-    margin-top: -100px;
+    margin-top: -70px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
-.pokemon-card .container-informacoes h3 {
+.pokemon-card .card-informacoes h3 {
     font-size: 20px;
     margin-bottom: 15px;
     border-bottom: 1px solid #6B727A;
 }
 
-.pokemon-card .container-informacoes p {
+.pokemon-card .card-informacoes p {
     margin-bottom: 4px;
 }
 
-.pokemon-card .container-informacoes .status,
-.pokemon-card .container-informacoes .habilidades {
+.pokemon-card .card-informacoes .status,
+.pokemon-card .card-informacoes .habilidades {
     padding: 0 10px;
     width: 180px;
 }
 
-.pokemon-card .container-informacoes .informacoes {
+.pokemon-card .card-informacoes .informacoes {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
