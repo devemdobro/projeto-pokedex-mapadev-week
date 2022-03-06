@@ -1,28 +1,30 @@
-const listaPokemons = document.querySelectorAll('.pokemon')
-const pokemonCard = document.querySelectorAll('.pokemon-card')
+const listaSelecaoPokemons = document.querySelectorAll(".pokemon");
+const pokemonsCards = document.querySelectorAll(".pokemon-card");
 
-listaPokemons.forEach(card => {
-    
-    card.addEventListener('click', () => {
+listaSelecaoPokemons.forEach(pokemon => {
+  pokemon.addEventListener("click", () => {
+    // remove a classe aberto de todos os cards dos pokemons
+    pokemonsCards.forEach(pokemonCard =>
+      pokemonCard.classList.remove("aberto")
+    );
 
-        pokemonCard.forEach(pokemonCard => pokemonCard.classList.remove('aberto'))
-        // pegar o pokemonSelecionado que foi clicado pelo usuário
-        const pokemonSelecionadoId = card.attributes.id.value;
+    // pegar o id do pokemonSelecionado que foi clicado pelo usuário
+    const idPokemonSelecionado = pokemon.attributes.id.value;
 
-        // ao clicar em um pokemonSelecionado da lista pegamos o id desse pokemonSelecionado pra saber qual card de pokemonSelecionado abrir 
-        const idDoCardParaAbrir = pokemonSelecionadoId + '-card';
+    // ao clicar em um pokemonSelecionado da lista pegamos o id desse pokemonSelecionado pra saber qual card de pokemonSelecionado abrir
+    const idDoCardPokemonParaAbrir = idPokemonSelecionado + "-card";
 
-        const cardParaAbrir = document.getElementById(idDoCardParaAbrir)
-        cardParaAbrir.classList.add('aberto')
+    const cardPokemonParaAbrir = document.getElementById(idDoCardPokemonParaAbrir);
 
-        // remover a classe ativa que marca o pokeo]mon selecionado
-        listaPokemons.forEach(pokemonSelecionado => pokemonSelecionado.classList.remove('ativo'))
+    cardPokemonParaAbrir.classList.add("aberto");
 
-        const pokemonSelecionado = document.getElementById(pokemonSelecionadoId);
-        console.log(pokemonSelecionado)
-        // adicianr a classe no pokemon selecionado
-        pokemonSelecionado.classList.add('ativo')
-    })
-})
+    // remover a classe ativa que marca o pokemon selecionado
+    listaSelecaoPokemons.forEach(pokemonSelecionado =>
+      pokemonSelecionado.classList.remove("ativo")
+    );
 
-
+    // adicianr a classe no pokemon selecionado
+    const pokemonSelecionado = document.getElementById(idPokemonSelecionado);
+    pokemonSelecionado.classList.add("ativo");
+  });
+});
