@@ -1,5 +1,5 @@
 const listaSelecaoPokemons = document.querySelectorAll(".pokemon");
-const pokemonsCards = document.querySelectorAll(".pokemon-card");
+const pokemonsCards = document.querySelectorAll(".cartao-pokemon");
 
 listaSelecaoPokemons.forEach(pokemon => {
   pokemon.addEventListener("click", () => {
