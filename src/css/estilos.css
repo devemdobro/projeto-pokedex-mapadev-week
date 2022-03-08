@@ -16,6 +16,7 @@ main {
   padding: 30px 0;
 }
 
+/* CARTÃO CENTRAL POKEMON */
 .cartao-pokemon {
   display: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -25,30 +26,6 @@ main {
 
 .cartao-pokemon .cartao-topo {
   padding: 30px 40px 0;
-}
-
-.tipo-fogo {
-  background-color: #ed8a8b;
-}
-
-.tipo-agua {
-  background-color: #76befe;
-}
-
-.tipo-grama {
-  background-color: #49d0b0;
-}
-
-.tipo-trevas {
-  background-color: #ba68c8;
-}
-
-.tipo-raio {
-  background-color: #fcc719;
-}
-
-.tipo-dragao {
-  background-color: #c29791;
 }
 
 .cartao-pokemon .nome {
@@ -111,6 +88,37 @@ main {
   padding-top: 30px;
 }
 
+.cartao-pokemon.aberto {
+  display: block;
+}
+
+/* COR DE FUNDO TIPOS POKEMONS */
+
+.tipo-fogo {
+  background-color: #ed8a8b;
+}
+
+.tipo-agua {
+  background-color: #76befe;
+}
+
+.tipo-grama {
+  background-color: #49d0b0;
+}
+
+.tipo-trevas {
+  background-color: #ba68c8;
+}
+
+.tipo-raio {
+  background-color: #fcc719;
+}
+
+.tipo-dragao {
+  background-color: #c29791;
+}
+
+/* LISTAGEM POKEMONS */
 .listagem {
   max-width: 200px;
 }
@@ -147,8 +155,4 @@ main {
 
 .listagem .pokemon span {
   padding-right: 20px;
-}
-
-.aberto {
-  display: block;
 }
