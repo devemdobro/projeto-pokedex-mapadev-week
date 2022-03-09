@@ -59,8 +59,10 @@ main {
 }
 
 .cartao-pokemon .cartao-informacoes {
+  display: flex;
+  justify-content: space-between;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 80px 50px 50px;
   margin-top: -70px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -82,18 +84,11 @@ main {
   width: 180px;
 }
 
-.cartao-pokemon .cartao-informacoes .informacoes {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 30px;
-}
-
 .cartao-pokemon.aberto {
   display: block;
 }
 
 /* COR DE FUNDO TIPOS POKEMONS */
-
 .tipo-fogo {
   background-color: #ed8a8b;
 }
