@@ -84,6 +84,13 @@ main {
   width: 180px;
 }
 
+.habilidades ul li, .status ul li {
+  border-bottom: 1px solid #c3c4c5;
+  padding: 0 0 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
 .cartao-pokemon.aberto {
   display: block;
 }
