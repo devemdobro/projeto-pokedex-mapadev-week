@@ -22,12 +22,6 @@
         margin-top: -50px;
     }
 
-    .cartao-pokemon .cartao-informacoes .informacoes {
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-    }
-
     .cartao-pokemon .cartao-informacoes h3 {
         font-size: 16px;
     }
